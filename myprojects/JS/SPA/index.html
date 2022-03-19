@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NAVBAR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assests/fonts/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+  <style>
+    /* animation one start*/
+    .animation{
+      width: 300px;
+      height: 380px;
+      position: absolute;
+      top: 91px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      right: 243px;
+    }
+    /* .animation>div{
+         height: 40px;
+         border: 1px solid gold;
+         position: relative;
+         background: #05dde7;
+         box-shadow: 2px 3px 4px 2px;
+         left: 0;
+         transition: 2s;
+     }*/
+    .animation>div>h3{
+      /* margin: 10px;
+       display: inline-block;*/
+      font-size: 31px;
+      box-shadow: 1px 5px 5px 0;
+      transition: 2s;
+
+    }
+    .animation>div>h3:hover{
+      color: darkviolet;
+      font-size: 55px;
+      transition: 2s;
+      box-shadow: 1px 2px 3px 2px darkorchid;
+    }
+    .animation>div>i{
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: 30px;
+      color: darkblue;
+      transition: all 2s;
+    }
+    .animation>div:hover {
+      background-color: gold;
+      left: 243px;
+      cursor: pointer;
+      transition: all 2s;
+    }
+    /* animation one End*/
+
+    /*customer style start*/
+    .mb-3 {
+      width: 700px;
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+    .cusSearch{
+      position: relative;
+    }
+    .cusIcon{
+      margin-left: 20px;
+      font-family: 'Bakbak One', cursive;
+      color: #ff253a;
+    }
+
+    .mb-4{
+      width: 1000px;
+      top: 10px;
+    }
+    body>button{
+      margin-left: 300px;
+
+    }
+    /*customer style End*/
+    /*Item style Start*/
+    .mb-35 {
+      width: 900px;
+      position: relative;
+    }
+    h1{
+      margin-left: 20px;
+      padding-top: 5px;
+      font-family: 'Bakbak One', cursive;
+      color: #0a53be;
+    }
+    body{
+      background: linear-gradient(#e6dbb9,papayawhip);
+
+    }
+    /*Item style End*/
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark" id="main">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#customerTab">Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#itemTab">Item</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="example.html">Order</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            more
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="">Customer</a></li>
+            <li><a class="dropdown-item" href="profile2.html">Item</a></li>
+            <li><a class="dropdown-item" href="#">Order</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!--side-->
+<section>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assests/img/carousel/1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assests/img/carousel/3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assests/img/carousel/2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!--animation-->
+<section class="animation">
+  <div><a href="#customerTab"><h3>Customer</h3></a><i class="fas fa-ambulance"></i></div>
+  <div><a href="#itemTab"><h3>Item</h3></a><i class="fas fa-camera-retro"></i></div>
+  <div><h3>Order</h3><i class="fas fa-coins"></i></div>
+
+</section>
+<!--animation End-->
+
+<!--customer section Start-->
+<h1><i class="fas fa-users"></i> <dfn id="customerTab"></dfn> Customer</h1>
+<section>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" id="ctxtSearch" placeholder="Customer Name/NIC" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <button class="bg-danger text-center text-white input-group-text" id="btnSearch">Search</button>
+    <!--id="basic-addon2-->
+  </div>
+</section>
+
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sm">ID</span>
+  <input type="text" class="form-control" id="txtID" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <p><small id="cerror" class="text-danger p-1"></small></p>
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sn">Name</span>
+  <input type="text" class="form-control" id="txtName" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <p><small id="cerror1" class="text-danger p-1"></small></p>
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-s0">Address</span>
+  <input type="text" class="form-control" id="txtAddress" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <p><small id="error2" class="text-danger p-1"></small></p>
+
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sp">Salary</span>
+  <input type="text" class="form-control" id="txtSalary" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <p><small id="error3" class="text-danger p-1"></small></p>
+
+</div>
+<button type="button" class="btn btn-outline-primary" id="updateBtn">Update</button>
+<button type="button" class="btn btn-outline-success" id="SaveBtn">Save</button>
+<button type="button" class="btn btn-outline-danger" id="deleteBtn">Delete</button>
+
+<section class="shadow-lg">
+  <table class="table table-bordered table-hover mt-3">
+    <thead class="bg-danger text-white-50 text-center">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Salary</th>
+    </tr>
+    </thead>
+    <tbody id="customerTable">
+
+    </tbody>
+  </table>
+
+</section>
+
+<!--customer section End-->
+
+<!--item section start-->
+<section>
+  <h1><i class="fas fa-sitemap"></i><dfn id="itemTab">ITEM</dfn> </h1>
+
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" id="txtSearch" placeholder="Item Code" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="bg-warning text-center text-white btn btn-outline-secondary" type="button" id="SearchBtn">Search</button>
+  </div>
+
+</section>
+
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" >ITEM CODE</span>
+  <input type="text" class="form-control" id="txtItemCode" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <p><small id="error" class="text-danger p-1"></small></p>
+
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" >ITEM NAME</span>
+  <input type="text" class="form-control" id="txtItemName" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  <p><small id="error1" class="text-danger p-1"></small></p>
+
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" >ITEM PRICE</span>
+  <input type="text" class="form-control" id="txtItemPrice" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" >ITEM QUANTITY</span>
+  <input type="text" class="form-control" id="txtItemQty" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<button type="button" class="btn btn-success" id="Update">Update</button>
+<button type="button" class="btn btn-primary" id="Save" >Save</button>
+<button type="button" class="btn btn-outline-danger" id="Delete">Delete</button>
+
+<section class="shadow-lg">
+  <table class="table table-bordered table-hover mt-3">
+    <thead class="bg-danger text-white text-center">
+    <tr>
+      <th>ITEM CODE</th>
+      <th>ITEM NAME</th>
+      <th>ITEM PRICE</th>
+      <th>ITEM QUANTITY</th>
+
+    </tr>
+    </thead>
+    <tbody id="itemTable">
+    </tbody>
+  </table>
+
+</section>
+
+<!--item section end-->
+
+<script src="assests/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--<script>
+    $("#SaveBtn").click(function (){
+        $('#customerTable>tr').off();
+
+        let customerID = $('#txtID').val();
+        let customerName = $('#txtName').val();
+        let customerAddress = $('#txtAddress').val();
+        let customerSalary = $('#txtSalary').val();
+
+        /* console.log(customerID,customerName,customerAddress,customerSalary);
+         let row = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerSalary}</td></tr>`;
+         console.log("hello "+row);
+
+         $('#customerTable').append(row);*/
+
+        var customerObj={
+            id:customerID,
+            name:customerName,
+            address:customerAddress,
+            salary:customerSalary
+        };
+        customerDB.push(customerObj);
+        loadAllCustomer();
+
+        function loadAllCustomer() {
+            $('#customerTable').empty();
+            for (var i of customerDB){
+                let row = `<tr><td>${ i.id}</td><td>${i.name}</td><td>${i.address}</td><td>${i.salary}</td></tr>`;
+                $('#customerTable').append(row);
+            }
+        }
+
+        $("#customerTable>tr").click(function() {
+            let cusID = $(this).children(":eq(0)").text();
+            let cusName = $(this).children(":eq(1)").text();
+            let cusAddress = $(this).children(":eq(2)").text();
+            let cusSalary = $(this).children(":eq(3)").text();
+
+            console.log(cusID,cusName,cusAddress,cusSalary);
+
+            $('#txtID').val(cusID);
+            $('#txtName').val(cusName);
+            $('#txtAddress').val(cusAddress);
+            $('#txtSalary').val(cusSalary);
+
+        });
+        //delete
+        $('#customerTable>tr').dblclick(function (){
+            $(this).remove();
+            $(this).remove();
+        });
+    });
+
+    $("#txtID").focus();
+
+    var regExCusID = /^(C00-)[0-9]{3,4}$/;
+    var regExCusName = /^[a-zA-Z]{5,18}$/;
+    var regExCusAddress = /^[a-zA-Z]{5,18}$/;
+    var regExCusSalary = /^[0-9]{5,8}$/;
+
+
+    /*$("#txtID").keyup(function (event) {
+
+      if (event.key=="Enter"){
+        $('#txtName').focus();
+      }
+
+      let input = $("#txtID").val();
+      if (regExCusID.test(input)) {
+        $("#txtID").css('border', '2px solid green');
+        $("#error").text("");
+      } else {
+        $("#txtID").css('border', '2px solid red');
+        $("#error").text("Wrong format : C00-001");
+      }
+    });
+
+    $("#txtName").keyup(function (event) {
+
+      if (event.key=="Enter"){
+        $('#txtAddress').focus();
+      }
+
+      let input = $("#txtName").val();
+      if (regExCusName.test(input)) {
+        $("#txtName").css('border', '2px solid green');
+        $("#error1").text("");
+      } else {
+        $("#txtName").css('border', '2px solid red');
+        $("#error1").text("Wrong format : Tharuka Nadun");
+      }
+    });
+
+    $("#txtAddress").keyup(function (event) {
+
+      if (event.key=="Enter"){
+        $('#txtSalary').focus();
+      }
+
+      let input = $("#txtAddress").val();
+      if (regExCusAddress.test(input)) {
+        $("#txtAddress").css('border', '2px solid green');
+        $("#error2").text("");
+      } else {
+        $("#txtAddress").css('border', '2px solid red');
+        $("#error2").text("Wrong format : Panadura");
+      }
+    });
+
+    $("#txtSalary").keyup(function () {
+
+      let input = $("#txtSalary").val();
+      if (regExCusSalary.test(input)) {
+        $("#txtSalary").css('border', '2px solid green');
+        $("#error3").text("");
+      } else {
+        $("#txtSalary").css('border', '2px solid red');
+        $("#error3").text("Wrong format : 50000");
+      }
+    });*/
+    let allValidators = [];
+
+    allValidators.push([regExCusID, $("#txtID")]);
+    allValidators.push([regExCusName, $("#txtName")]);
+    allValidators.push([regExCusAddress, $("#txtAddress")]);
+    allValidators.push([regExCusSalary, $("#txtSalary")]);
+
+    $("#txtID,#txtName,#txtAddress,#txtSalary").on('keyup', function (e) {
+        validateText(allValidators, e.key);
+    });
+
+    setDisableAllText(allValidators);
+
+    function validateText(expression, key) {
+        for (let i = 0; i < expression.length; i++) {
+            var regEx = expression[i][0];
+            var input = expression[i][1];
+
+            //check whether someone type in the text field
+            if (input.val().length >= 1) {
+                if (regEx.test(input.val())) {
+                    input.css("border", '2px solid green');
+                    if (key == "Enter") {
+                        expression[i + 1][1].attr('disabled', false);
+                        expression[i + 1][1].focus();
+                    }
+                } else {
+                    input.css("border", '2px solid red');
+                }
+            } else {
+                input.css("border", '1px solid #ced4da');
+            }
+        }
+    }
+
+
+
+    /*
+    function setDisableAllText(expression) {
+      $("#SaveBtn").attr("disabled", true);
+      for (let i = 0; i < expression.length; i++) {
+        var input = expression[i + 1][1];
+        input.attr('disabled', true);
+      }
+    }
+    */
+
+    /*search*/
+    $("#btnSearch").click(function (){
+        var searchID = $("txtSearch").val();
+
+
+        var response = searchCustomer(searchID);
+        if (response) {
+            $("#txtID").val(response.id);
+            $("#txtName").val(response.name);
+            $("#txtAddress").val(response.address);
+            $("#txtSalary").val(response.salary);
+        }else{
+            clearAll();
+            alert("No Such a Customer");
+        }
+    });
+    function searchCustomer(id) {
+        for (let i=0;i<customerDB.length;i++){
+            if (customerDB[i].id==id){
+                return customerDB[i];
+            }
+        }
+    }
+  /*  item start*/
+    $("#Save").click(function (){
+
+        let ItemCode = $("#txtItemCode").val();
+        let ItemName = $("#txtItemName").val();
+        let ItemPrice = $("#txtItemPrice").val();
+        let ItemQty = $("#txtItemQty").val();
+
+        console.log(ItemCode,ItemName,ItemPrice,ItemQty);
+        let row = `<tr><td>${ItemCode}</td><td>${ItemName}</td><td>${ItemPrice}</td><td>${ItemQty}</td></tr>`;
+
+        $('#itemTable').append(row);
+
+        $("#itemTable>tr").click(function() {
+            let ItemCode = $(this).children(":eq(0)").text();
+            let ItemName = $(this).children(":eq(1)").text();
+            let ItemPrice = $(this).children(":eq(2)").text();
+            let ItemQty = $(this).children(":eq(3)").text();
+
+            console.log(ItemCode,ItemName,ItemPrice,ItemQty);
+
+            $('#txtItemCode').val(ItemCode);
+            $('#txtItemName').val(ItemName);
+            $('#txtItemPrice').val(ItemPrice);
+            $('#txtItemQty').val(ItemQty);
+
+        });
+        $('#itemTable>tr').dblclick(function (){
+            $(this).remove();
+            $(this).remove();
+        });
+    });
+
+
+    $("#txtItemCode").focus();
+
+    var regExItemCode = /^(I00-)[0-9]{3,4}$/;
+    var regExItemName = /^[a-zA-Z]{5,18}$/;
+    var regExItemPrice = /^[0-9]{2,8}$/;
+    var regExItemQty = /^[0-9]{1,4}$/;
+
+
+    $("#txtItemCode").keyup(function (event) {
+
+        if (event.key=="Enter"){
+            $('#txtItemName').focus();
+        }
+
+        let input = $("#txtItemCode").val();
+        if (regExItemCode.test(input)) {
+            $("#txtItemCode").css('border', '2px solid green');
+            $("#errors").text("");
+        } else {
+            $("#txtItemCode").css('border', '2px solid red');
+            $("#error").text("Wrong format : C00-001");
+        }
+    });
+
+    $("#txtItemName").keyup(function (event) {
+
+        if (event.key=="Enter"){
+            $('#txtItemPrice').focus();
+        }
+
+        let input = $("#txtItemName").val();
+        if (regExItemName.test(input)) {
+            $("#txtItemName").css('border', '2px solid green');
+            $("#errors1").text("");
+        } else {
+            $("#txtItemName").css('border', '2px solid red');
+            $("#error1").text("Wrong format : AnyItem");
+        }
+    });
+
+    $("#txtItemPrice").keyup(function (event) {
+
+        if (event.key=="Enter"){
+            $('#txtItemQty').focus();
+        }
+
+        let input = $("#txtItemPrice").val();
+        if (regExItemPrice.test(input)) {
+            $("#txtItemPrice").css('border', '2px solid green');
+            $("#error2").text("");
+        } else {
+            $("#txtItemPrice").css('border', '2px solid red');
+            $("#error2").text("Wrong format : 1000");
+        }
+    });
+
+    $("#txtItemQty").keyup(function () {
+
+        let input = $("#txtItemQty").val();
+        if (regExItemQty.test(input)) {
+            $("#txtItemQty").css('border', '2px solid green');
+            $("#error3").text("");
+        } else {
+            $("#txtItemQty").css('border', '2px solid red');
+            $("#error3").text("Wrong format : 100");
+        }
+    });
+
+    /*  item end*/-->
+<script src="assests/db/DB.js"></script>
+
+<script src="assests/controller/customer.js"></script>
+
+<script src="assests/modul/Customer.js"></script>
+
+<script src="assests/controller/item.js"></script>
+
+<script src="assests/modul/item.js"></script>
+
+</body>
+</html>

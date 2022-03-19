@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Queue</title>
+
+  <style>
+    .row{
+      display: flex;
+      width: 800px;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-bottom: black solid 2px;
+    }
+    .square {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin-top: 90px;
+    }
+    #shop{
+      width: 200px;
+      height: 200px;
+    }
+    .header{
+      position: absolute;
+      top: 20%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: fit-content;
+    }
+  </style>
+
+</head>
+<body>
+<h1 class="header"> Java Script Queue</h1>
+<div class="row">
+  <div class="square"><img id="one" src="https://www.animatedimages.org/data/media/1635/animated-walking-image-0055.gif"/></div>
+  <div class="square"><img id="two" src="https://www.animatedimages.org/data/media/1635/animated-walking-image-0012.gif"/></div>
+  <div class="square"><img id="three" src="https://www.animatedimages.org/data/media/1635/animated-walking-image-0044.gif"/></div>
+  <div class="square"><img id="four" src="https://www.animatedimages.org/data/media/1635/animated-walking-image-0033.gif"/></div>
+  <div class="square"><img id="five" src="https://c.tenor.com/Ag2kcjhLvBIAAAAj/walking-strolling.gif"/></div>
+  <div class="square"><img id="six" src="https://www.animatedimages.org/data/media/1635/animated-walking-image-0019.gif"/></div>
+  <div><img id="shop"  src="https://cdn.pixabay.com/photo/2013/07/13/11/31/shop-158317_960_720.png" alt=""></div>
+</div>
+
+<script src="assests/jQuery/jquery-3.6.0.min.js"></script>
+
+<script>
+  var idArray = [$("#one"), $("#two"), $("#three"), $("#four"), $("#five"), $("#six")];
+  var imageArray = ["https://www.animatedimages.org/data/media/1635/animated-walking-image-0055.gif",
+    "https://www.animatedimages.org/data/media/1635/animated-walking-image-0012.gif",
+    "https://www.animatedimages.org/data/media/1635/animated-walking-image-0044.gif",
+    "https://www.animatedimages.org/data/media/1635/animated-walking-image-0033.gif",
+    "https://c.tenor.com/Ag2kcjhLvBIAAAAj/walking-strolling.gif",
+    "https://www.animatedimages.org/data/media/1635/animated-walking-image-0019.gif"]
+
+  function makeArray() {
+    var tempImages=new Array();
+    tempImages.push(imageArray[5]);
+    for (let i = 0; i <idArray.length-1 ; i++) {
+      tempImages.push(imageArray[i]);
+    }
+    imageArray=tempImages;
+  }
+  function assign() {
+    makeArray();
+    for (let i = 0; i <idArray.length ; i++) {
+      idArray[i].attr("src",imageArray[i]);
+    }
+  }
+  setInterval(assign,1000);
+
+</script>
+</body>
+</html>

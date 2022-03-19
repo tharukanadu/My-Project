@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        header{
+            /*  border: 2px solid red;*/
+            position: relative;
+            height: 80px;
+            box-shadow: 10px 1px 5px 1px brown;
+        }
+        header>img{
+            width: 200px;
+            margin: 9px;
+        }
+        header>ul{
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+            list-style: none;
+            top: 0;
+            margin: auto;
+            height: 40px;
+            font-size: 23px;
+            font-family: monospace;
+        }
+        header>ul>li{
+            padding: 0 10px 0 10px;
+            display: inline;
+        }
+        header>ul>li:hover{
+            cursor: pointer;
+            color: seagreen;
+        }
+        main>nav{
+            width: 250px;
+            background-color: blue;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+        }
+        body>main{
+            position: relative;
+        }
+        main>section{
+            margin-left: 250px;
+            padding: 10px;
+        }
+        main>nav>ul{
+            list-style: none;
+            font-size: 22px;
+            margin-top: 39px;
+        }
+        main>nav>ul>li{
+            padding-bottom: 20px;
+        }
+        main>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
+            /* padding-bottom: 4px;*/
+            border-bottom:2px solid white ;
+        }
+        main>section>section{
+            border: 2px solid red;
+            height: 300px;
+            position: relative;
+        }
+        main>section>section>div{
+            border: 1px solid green;
+            position: absolute;
+            height: 100%;
+            width: calc(100%/3);
+        }
+        main>section>section>div:nth-child(1){
+            left: 0;
+            background: url("assets/img/A.jpg");
+            background-size: cover;
+        }
+        main>section>section>div:nth-child(2){
+            left: calc(100%/3);
+            background: url("assets/img/B.jpg");
+            background-size: cover;
+        }
+        main>section>section>div:nth-child(3){
+            left: calc((100%/3)*2);
+            background: url("assets/img/C.jpg");
+            background-size: cover;
+        }
+        body>footer{
+            height: 60px;
+            background-color: #c1a7a7;
+        }
+        body>footer>p{
+            margin-top: 0;
+            text-align: center;
+            padding: 20px;
+            color: blue;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img src="assets/img/ijse.png" alt="">
+    <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contact</li>
+        <li>About US</li>
+    </ul>
+</header>
+<main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Service</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html">About US</a> </li>
+        </ul>
+
+    </nav>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ea eius hic labore laboriosam magnam omnis!
+            Atque eaque, earum et fugit incidunt magnam molestiae, neque perferendis placeat sed, ullam ut.</p>
+        <p>Accusamus esse id illo in nam, nihil nostrum obcaecati officiis perferendis perspiciatis quasi, quibusdam,
+            repellat veritatis? Ab culpa debitis dicta, et eveniet inventore molestias odit officia possimus quia quidem
+            similique!</p>
+        <p>Asperiores at delectus dolorum, ducimus expedita fuga illum magnam mollitia officia perferendis porro
+            repudiandae sint, voluptatum. Error iure omnis ratione vel? Doloribus ex id ipsum libero modi, quisquam sequi
+            similique.</p>
+        <p>Adipisci dolore dolores eveniet nesciunt non officia omnis quasi ullam voluptas voluptatum. Corporis dicta,
+            doloremque, eius expedita harum id illo laborum odio officiis perspiciatis quaerat quo repellat sequi sunt
+            suscipit!</p>
+        <!-- <p>Aliquam architecto corporis cum cupiditate distinctio dolore doloremque eius, facere harum illo ipsam
+           laudantium magnam magni molestias nam nemo nostrum obcaecati pariatur porro provident quaerat quidem reiciendis,
+           reprehenderit voluptas, voluptates!</p>
+         <p>Aliquam, cumque eius id ipsum porro quaerat quia, repudiandae temporibus ullam, ut velit veritatis. Architecto
+           atque earum eligendi fuga labore laboriosam magni obcaecati quaerat, reprehenderit ut! Aspernatur distinctio est
+           nesciunt.</p>
+         <p>Beatae delectus dolorem maiores non optio quam sequi sit vel? Aliquam animi at dignissimos ducimus eaque earum
+           et exercitationem id laudantium necessitatibus nihil obcaecati quis, quisquam sit sunt, tempore voluptate.</p>
+         <p>Aliquam amet aut doloremque dolores doloribus est harum iure laboriosam neque officia, quam sapiente sequi
+           soluta tenetur ullam veritatis, voluptatem. A alias ex facilis impedit sed, similique tenetur vero
+           voluptates!</p>-->
+
+    </section>
+</main>
+<footer>
+    <p><small>Developed by IJSE</small></p>
+</footer>
+
+</body>
+</html>

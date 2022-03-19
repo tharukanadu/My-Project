@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Case 1</title>
+  <style>
+    section{
+      margin-top: 100px;
+      margin-left: 100px;
+      position: relative;
+      width: 210px;
+      height: 120px;
+      /*border:1px solid red;*/
+      background: url("assert/car-gif-1.gif");
+      background-size: cover;
+      background-position: center;
+      animation-name: gogo;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+
+    }
+
+    @keyframes gogo {
+      0%,20%{
+        left: 0;
+        top: 0;
+        transform: rotate(0deg);
+      }
+
+      25%{
+        left: 600px;
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      50%{
+        left: 600px;
+        top: 400px;
+        transform: rotate(180deg);
+      }
+
+      75%{
+        left: 0;
+        top: 400px;
+        transform: rotate(270deg);
+      }
+
+      100%{
+        left: 0;
+        top: 0;
+        transform: rotate(360deg);
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+<section>
+
+</section>
+
+</body>
+</html>

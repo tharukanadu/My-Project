@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CUSTOMER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="asserts/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asserts/fonts/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+  <style>
+    .mb-3 {
+      width: 700px;
+      position: absolute;
+      top: 10px;
+      right: 200px;
+    }
+    h1{
+      margin-left: 20px;
+      font-family: 'Bakbak One', cursive;
+      color: #ff253a;
+    }
+
+    .mb-4{
+      width: 1000px;
+      top: 10px;
+    }
+    body>button{
+      margin-left: 300px;
+    }
+  </style>
+</head>
+<body>
+<h1><i class="fas fa-users"></i>  Customer</h1>
+<section>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Customer Name/NIC" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <span class="bg-danger text-center text-white input-group-text" id="basic-addon2">Search</span>
+  </div>
+</section>
+
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sm">ID</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sn">Name</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-s0">Address</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sp">Salary</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<button type="button" class="btn btn-outline-primary">Update</button>
+<button type="button" class="btn btn-outline-success">Save</button>
+<button type="button" class="btn btn-outline-danger">Delete</button>
+
+<section class="shadow-lg">
+  <table class="table table-bordered table-hover mt-3">
+    <thead class="bg-danger text-white-50 text-center">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>C001</td>
+      <td>Dasun</td>
+      <td>Galle</td>
+      <td>25000</td>
+    </tr>
+    <tr>
+      <td>C002</td>
+      <td>Kasun</td>
+      <td>Panadura</td>
+      <td>44000</td>
+    </tr>
+    <tr>
+      <td>C003</td>
+      <td>Nethmi</td>
+      <td>Colombo</td>
+      <td>40000</td>
+    </tr>
+    <tr>
+      <td>C004</td>
+      <td>Mahinda</td>
+      <td>Hambanthota</td>
+      <td>60000</td>
+    </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<script src="asserts/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

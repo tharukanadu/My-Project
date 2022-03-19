@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="asserts/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asserts/fonts/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+
+
+  <style>
+    .nav{
+      background-color: lawngreen;
+      justify-content: center;
+      font-size: 25px;
+    }
+    .btn-success {
+      position: absolute;
+      left: 650px;
+      bottom: 100px;
+    }
+    form{
+      margin-top: 45px;
+    }
+    h1{
+      color: #ff253a;
+      left: 114px;
+      position: relative;
+      top: 10px;
+      font-family: 'Bakbak One', cursive;
+    }
+    body{
+      background: linear-gradient(#86b7fe,#d3d6d8);
+
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-link active" aria-current="page" href="#">Invoice Details</a>
+</nav>
+
+<h1>Total : rs 1050/=</h1>
+<h1>SubTotal : rs 975/=</h1>
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="cash"class="form-label">Cash</label>
+      <input type="text" class="form-control" id="cash" >
+    </div>
+
+    <div class="mb-3">
+      <label for="discount"class="form-label">Discount</label>
+      <input type="text" class="form-control" id="discount" >
+    </div>
+
+    <div class="mb-3">
+      <label for="balance"class="form-label">Balance</label>
+      <input type="text" class="form-control" id="balance" >
+    </div>
+  </form>
+</div>
+<button type="button" class="btn btn-success">Purchase</button>
+</body>
+</html>

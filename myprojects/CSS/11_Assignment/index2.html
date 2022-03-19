@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Item</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="asserts/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asserts/fonts/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+  <style>
+    .mb-3 {
+      width: 900px;
+      position: absolute;
+      top: 10px;
+      right: 200px;
+    }
+    h1{
+      margin-left: 20px;
+      padding-top: 5px;
+      font-family: 'Bakbak One', cursive;
+      color: #0a53be;
+    }
+    body{
+      background: linear-gradient(#e6dbb9,papayawhip);
+
+    }
+  </style>
+</head>
+<body>
+<section>
+  <h1><i class="fas fa-sitemap"></i>  ITEM</h1>
+
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Item Code" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="bg-warning text-center text-white btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+  </div>
+
+</section>
+
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sm">ITEM CODE</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sn">ITEM NAME</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-s0">ITEM PRICE</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-4">
+  <span class="bg-black text-white input-group-text" id="inputGroup-sizing-sp">ITEM QUANTITY</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<button type="button" class="btn btn-success">Update</button>
+<button type="button" class="btn btn-primary">Save</button>
+<button type="button" class="btn btn-danger">Delete</button>
+
+<section class="shadow-lg">
+  <table class="table table-bordered table-hover mt-3">
+    <thead class="bg-danger text-white text-center">
+    <tr>
+      <th>ITEM CODE</th>
+      <th>ITEM NAME</th>
+      <th>ITEM PRICE</th>
+      <th>ITEM QUANTITY</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>I001</td>
+      <td>Banana</td>
+      <td>5kg</td>
+      <td>1000</td>
+      <td><button type="button" class="btn btn-outline-dark">Edit</button></td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+    <tr>
+      <td>I002</td>
+      <td>Apple</td>
+      <td>15</td>
+      <td>1500</td>
+      <td><button type="button" class="btn btn-outline-dark">Edit</button></td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+    <tr>
+      <td>I003</td>
+      <td>Avocado</td>
+      <td>30</td>
+      <td>3000</td>
+      <td><button type="button" class="btn btn-outline-dark">Edit</button></td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+    <tr>
+      <td>I004</td>
+      <td>Blackberries</td>
+      <td>3kg</td>
+      <td>5000</td>
+      <td><button type="button" class="btn btn-outline-dark">Edit</button></td>
+      <td><button type="button" class="btn btn-outline-danger">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+
+</section>
+
+<script src="asserts/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
