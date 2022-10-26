@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="assests/fonts/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <style>
-        h2{
+       /* h2{
             color: darkred;
         }
         body{
@@ -46,9 +48,9 @@
             margin-top: 25px;
         }
         body>header>nav>ul>li{
-           /* list-style: none;
+           !* list-style: none;
             display: inline-block;
-            margin: 0 20px;*/
+            margin: 0 20px;*!
             margin-right: 2rem;
 
         }
@@ -86,7 +88,7 @@
             justify-content: space-evenly;
         }
         main>section>div{
-            /*border: 1px solid red;*/
+            !*border: 1px solid red;*!
             color: blue;
             position: absolute;
             top: 140px;
@@ -113,9 +115,9 @@
             font-size: 36px;
             transition: 2s;
         }
-       /* border animation*/
+       !* border animation*!
         body>main>section>nav>ul{
-          /*  border: 2px solid red;*/
+          !*  border: 2px solid red;*!
             width: 410px;
             height: 115px;
             padding-top: 31px;
@@ -124,7 +126,7 @@
             border-radius: 10px;
             position: relative;
             overflow: hidden;
-           /* display: flex;*/
+           !* display: flex;*!
             justify-content: center;
             align-items: center;
         }
@@ -160,22 +162,22 @@
         body>main>section>nav>ul:hover{
             border: 2px solid green;
         }
-        /*pic1*/
+        !*pic1*!
         main>section>img{
             margin-left: 50px;
         }
-        /*2 bar*/
+        !*2 bar*!
 
 
         main>section>section>h2{
             margin-left: 60px;
             font-size: 27px;
         }
-        /*under*/
+        !*under*!
         body>main>section>section>h5{
             margin-left: 20px;
         }
-        /*skil ul*/
+        !*skil ul*!
        main>section>section>ul>li{
             list-style: none;
             display: inline-block;
@@ -188,9 +190,9 @@
             text-decoration: none;
             transition: 0.3s all;
         }
-        /*main>section>section>ul{
+        !*main>section>section>ul{
             margin-left: 250px;
-        }*/
+        }*!
         main>section>section:nth-child(2)>ul{
             border: 2px solid red;
         }
@@ -264,7 +266,7 @@
                 }
             }
         }
-        /*social media*/
+        !*social media*!
         #social{
             width: 300px;
             height: 212px;
@@ -302,7 +304,7 @@
             cursor: pointer;
             transition: all 2s;
         }
-        /* frame*/
+        !* frame*!
         .box{
             position: relative;
             left: 90px;
@@ -325,7 +327,7 @@
             position: relative;
             left: 20px;
         }
-        /* animation border*/
+        !* animation border*!
         a{
             position: relative;
             padding: 15px 30px;
@@ -358,7 +360,7 @@
                 stroke-dashoffset: 0;
             }
         }
-      /*  about*/
+      !*  about*!
 
         .about{
             width: 400%;
@@ -403,7 +405,7 @@
                 transform: translateX(-75%);
             }
         }
-        /* indoor*/
+        !* indoor*!
         .indoor{
             width: 400%;
             height: 100%;
@@ -448,15 +450,17 @@
             }
         }
 
-
+*/
 
     </style>
 </head>
 <body>
 <header id="header">
 
-  <nav>
+current Time <span id="time"></span>
+    Date <span id="date"></span>
 
+    <nav>
       <ul>
 
       <li><a href="#sa"class="hover-line">Skill</a></li>
@@ -488,15 +492,7 @@
 </ul>
 </nav>
       <section>
-         <!-- <div>
-          &lt;!&ndash;<h1><strong><a href="#aa">Home</a>  <mark><dfn id="sd">Skill</dfn></mark> Education Project About me Contact</strong></h1>&ndash;&gt;
-          <button><dfn id="#aa">Home</dfn></button>
-          <button><a href="sd">Skill</a></button>
-          <button><a href="">Education</a></button>
-          <button><a href="">Project</a></button>
-          <button><a href="">About me</a></button>
-          <button><a href="">Contact</a></button>
-          </div>-->
+
           <ul>
               <li><dfn id="#aa">Home</dfn></li>
               <li><a href="#sa"class="hover-line">Skill</a></li>
@@ -506,7 +502,7 @@
               <li><a href="#ss"class="hover-line">Contact</a></li>
           </ul>
               <h2><b>Skill</b></h2>
-
+            <div class="technical_skil">
           <h3 style="color: darkgoldenrod"><i>Technical Skill</i></h3>
           <img src="assests/MyWorkImages/back.png" alt="There was an error loading this image"width="150">
           <img src="assests/MyWorkImages/mysql_PNG23.png" alt="There was an error loading this image"width="200">
@@ -514,6 +510,7 @@
           <img src="assests/MyWorkImages/R.jpeg" alt="There was an error loading this image"width="200">
           <img src="assests/MyWorkImages/hibernate.png" alt="There was an error loading this image"width="200">
           <img src="assests/MyWorkImages/next.png" alt="There was an error loading this image"width="150">
+            </div>
 
           <h3 style="color: darkgoldenrod"><i>Most Frequently used tools</i></h3>
           <img src="assests/MyWorkImages/back.png" alt="There was an error loading this image"width="150">
@@ -580,11 +577,7 @@
           </section>
 
           <h3 style="color: blueviolet"><i>Indoor Sports</i></h3>
-         <!-- <img src="assests/MyWorkImages/OIP%20(2).jpeg" alt="There was an error loading this image"width="200"height="150">
-          <img src="assests/MyWorkImages/Mobile-PUBG.webp" alt="There was an error loading this image"width="200"height="150">
-          <img src="assests/MyWorkImages/carrom.jpg" alt="There was an error loading this image"width="200"height="150">
-          <img src="assests/MyWorkImages/next.png" alt="There was an error loading this image"width="150">
--->
+
           <section class="indoor">
               <div><img src="assests/MyWorkImages/OIP%20(2).jpeg" alt="There was an error loading this image"width="200"height="150"></div>
               <div>          <img src="assests/MyWorkImages/Mobile-PUBG.webp" alt="There was an error loading this image"width="200"height="150">
@@ -617,7 +610,7 @@
       </section>
 
       <section>
-          <a href="#">
+     <!--     <a href="#">-->
               <svg><rect></rect></svg>
           <form action="https://ijse.lk">
               <fieldset>
@@ -625,8 +618,12 @@
                   <label for="txtName">Your Name</label>
                   <input id="txtName"type="text" placeholder="Your Name"><br><br>
 
-                  <label for="txtEmail">Your Email</label>
+                 <!-- <label for="txtEmail">Your Email</label>
                   <input id="txtEmail"type="text" placeholder="Email"><br><br>
+-->
+                  <form name="myform"  method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateemail();">
+                      Email: <input type="text" name="email" placeholder="email"><br><br>
+
 
                   <label for="txtSubject">Your Subject</label>
                   <input id="txtSubject"type="text" placeholder="Your subject"><br><br>
@@ -635,8 +632,10 @@
                   <textarea id="txtArea">
 
     </textarea>
+                     <input type="submit" value="register">
+                  </form>
 
-                  <button>Submit</button>
+<!--                  <button>Submit</button>-->
               </fieldset>
           </form>
           </a>
@@ -663,6 +662,46 @@
         }
     }
     setInterval(animationText,200);
+
+    //date
+    var date=new Date();
+    var day=date.getDate();
+    var month=date.getMonth()+1;
+    var year=date.getFullYear();
+    document.getElementById('date').innerHTML =day+"/"+month+"/"+year;
+
+    //time
+    window.onload=function(){getTime();}
+    function getTime(){
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+
+        m=checkTime(m);
+        s=checkTime(s);
+        document.getElementById('time').innerHTML=h+":"+m+":"+s;
+        setTimeout(function(){getTime()},1000);
+    }
+
+    function checkTime(i){
+        if (i<10){
+            i="0" + i;
+        }
+        return i;
+    }
+
+    //mail submit btn
+    function validateemail()
+    {
+        var x=document.myform.email.value;
+        var atposition=x.indexOf("@");
+        var dotposition=x.lastIndexOf(".");
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+            alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
+            return false;
+        }
+    }
 
 </script>
 

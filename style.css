@@ -1,0 +1,439 @@
+h2{
+    color: darkred;
+}
+body{
+    background: linear-gradient(#e7d2d2,#95a5a6);
+}
+#header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 4rem;
+    background: #fff;
+    box-shadow: 2px 2px 11px 2px black;
+    z-index: 111;
+    height: 10px;
+}
+
+body>header>nav{
+    height: 70px;
+    width: 700px;
+    position: relative;
+    left: 100px;
+}
+body>header>nav>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+body>header>nav>ul>li{
+    /* list-style: none;
+     display: inline-block;
+     margin: 0 20px;*/
+    margin-right: 2rem;
+
+}
+body>header>nav>ul>li>a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+body>header>nav>ul>li>dfn{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+body>header>nav>ul>li>a:hover{
+    color: #3498db;
+}
+.hover-line::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ff253a;
+    transition: width 2s;
+}
+.hover-line:hover::after{
+    width: 100%;
+    transition: width 5s;
+}
+
+body>header{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+main>section>div{
+    /*border: 1px solid red;*/
+    color: blue;
+    position: absolute;
+    top: 140px;
+    left: 450px;
+}
+main>section>div>h1:nth-child(1){
+    font-size: 47px;
+    color: crimson;
+    transition: 2s;
+}
+main>section>div>h1:nth-child(2){
+    font-size: 31px;
+    box-shadow: 1px 5px 5px 0;
+    transition: 2s;
+}
+main>section>div>h1:nth-child(1):hover{
+    color: darkviolet;
+    font-size: 55px;
+    transition: 2s;
+    box-shadow: 1px 2px 3px 2px darkorchid;
+}
+main>section>div>h1:nth-child(2):hover{
+    color: indigo;
+    font-size: 36px;
+    transition: 2s;
+}
+/* border animation*/
+body>main>section>nav>ul{
+    /*  border: 2px solid red;*/
+    width: 410px;
+    height: 115px;
+    padding-top: 31px;
+    margin-left: 50px;
+    box-shadow: 10px 8px 10px gold;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    /* display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+body>main>section>nav>ul:before{
+    content: '';
+    background-image: conic-gradient(#05dde7 20deg,
+    transparent 120deg);
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+
+}
+body>main>section>nav>ul:after{
+    content: "Animation";
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body>main>section>nav>ul:hover{
+    border: 2px solid green;
+}
+/*pic1*/
+main>section>img{
+    margin-left: 50px;
+}
+/*2 bar*/
+
+
+main>section>section>h2{
+    margin-left: 60px;
+    font-size: 27px;
+}
+/*under*/
+body>main>section>section>h5{
+    margin-left: 20px;
+}
+/*skil ul*/
+main>section>section>ul>li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    margin-left: 30px;
+}
+main>section>section>ul>li>a{
+    font-size: 18px;
+    color: green;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+/*main>section>section>ul{
+    margin-left: 250px;
+}*/
+main>section>section:nth-child(2)>ul{
+    border: 2px solid red;
+}
+@media all and (max-width: 425px) {
+    main > section > img {
+        width: 0%;
+    }
+
+    body > header > nav > ul > li > a {
+        font-size: 10px;
+    }
+
+    body > header > nav > ul > li > dfn {
+        font-size: 10px;
+    }
+    main>section>div>h1:nth-child(1){
+        font-size: 20px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    main>section>div>h1:nth-child(2){
+        font-size: 15px;
+    }
+    body>main>section>nav>ul{
+        width: 310px;
+        height: 115px;
+        padding-top: 31px;
+        margin-left: 50px;
+        box-shadow: 5px 4px 4px gold;
+
+    }
+    main>section>section>ul>li>a{
+        font-size: 10px;
+    }
+    main>section>section>ul>li>dfn{
+        font-size: 10px;
+    }
+    main>section>section>img{
+        width: 50px;
+        height: 60px;
+    }
+    @media all and (min-width: 425px) and (max-width: 768px){
+        main>section>img{
+            width: 270px;
+            height: 310px;
+        }
+        main>section>div>h1:nth-child(1){
+            font-size: 28px;
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 100px;
+        }
+        main>section>div>h1:nth-child(2) {
+            font-size: 20px;
+        }
+        main>section>section>img{
+            width: 75px;
+            height: 85px;
+        }
+        @media all and (min-width: 768px) and (max-width: 1024px){
+            main>section>img{
+                width: 310px;
+                height: 350px;
+            }
+            main>section>section>img{
+                width: 50px;
+                height: 55px;
+            }
+        }
+    }
+}
+/*social media*/
+#social{
+    width: 300px;
+    height: 212px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 243px;
+    bottom: 6px;
+}
+#social>div{
+    height: 40px;
+    border: 1px solid gold;
+    position: relative;
+    background: #05dde7;
+    box-shadow: 2px 3px 4px 2px;
+    left: 0;
+    transition: 2s;
+}
+#social>div>h3{
+    margin: 10px;
+    display: inline-block;
+}
+#social>div>i{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 30px;
+    color: darkblue;
+    transition: all 2s;
+}
+#social>div:hover{
+    background-color: gold;
+    left: 243px;
+    cursor: pointer;
+    transition: all 2s;
+}
+/* frame*/
+.box{
+    position: relative;
+    left: 90px;
+    width: 550px;
+    height: 300px;
+    border:4px solid transparent;
+    border-image: linear-gradient(-45deg,#ff0,#f0f,#f00,#00f,#0f0);
+    border-image-slice: 1;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+.me{
+    position: relative;
+    left: 200px;
+}
+main>section>section>div>h3 {
+    position: relative;
+    left: 180px;
+}
+main>section>section>div>h5{
+    position: relative;
+    left: 20px;
+}
+/* animation border*/
+a{
+    position: relative;
+    padding: 15px 30px;
+    color:black;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+a svg,a svg rect{
+    position: absolute;
+    top: 20px;
+    left: 4px;
+    width: 1330px;
+    height: 220px;
+    fill: transparent;
+}
+a svg rect{
+    stroke-width: 5;
+    stroke: blue;
+    stroke-dasharray:200 ;
+    animation: animate 2s linear infinite;
+
+}
+@keyframes animate {
+    0% {
+        stroke-dashoffset: 400;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/*  about*/
+
+.about{
+    width: 400%;
+    height: 100%;
+    animation-name:slideme ;
+    animation-duration: 5s;
+    display: flex;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.about>div{
+    width: 100%;
+}
+.about>div:nth-child(1){
+    background-size: cover;
+    background-position: center;
+}
+.about>div:nth-child(2){
+    background-size: cover;
+    background-position: center;
+}
+.about>div:nth-child(3){
+    background-size: cover;
+    background-position: center;
+}
+.about>div:nth-child(4){
+    background-size: cover;
+    background-position: center;
+}
+@keyframes slideme {
+    0%,15%{
+        transform: translateX(0);
+    }
+    25%,40%{
+        transform: translateX(-25%);
+    }
+    50%,70%{
+        transform: translateX(-50%);
+    }
+
+    80%,100%{
+        transform: translateX(-75%);
+    }
+}
+/* indoor*/
+.indoor{
+    width: 400%;
+    height: 100%;
+    animation-name:slidem ;
+    animation-duration: 5s;
+    display: flex;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.indoor>div{
+    width: 100%;
+}
+.indoor>div:nth-child(1){
+    background-size: cover;
+    background-position: center;
+}
+.indoor>div:nth-child(2){
+    background-size: cover;
+    background-position: center;
+}
+.indoor>div:nth-child(3){
+    background-size: cover;
+    background-position: center;
+}
+.indoor>div:nth-child(4){
+    background-size: cover;
+    background-position: center;
+}
+@keyframes slidem {
+    0%,15%{
+        transform: translateX(0);
+    }
+    25%,40%{
+        transform: translateX(-25%);
+    }
+    50%,70%{
+        transform: translateX(-50%);
+    }
+
+    80%,100%{
+        transform: translateX(-75%);
+    }
+}
+
