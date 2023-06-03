@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;500;800&family=Open+Sans:ital,wght@0,800;1,700&family=Play&family=Rokkitt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;500;800&family=Open+Sans:ital,wght@0,800;1,700&family=Play&family=Rokkitt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;500;800&family=Open+Sans:ital,wght@0,800;1,700&family=Play&display=swap');
 
@@ -24,54 +25,7 @@ body{
     height: 10px;
 }
 
-/*body>header>nav{
-    height: 70px;
-    width: 700px;
-    position: relative;
-    left: 100px;
-}
-body>header>nav>ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 25px;
-}
-body>header>nav>ul>li{
-    !* list-style: none;
-     display: inline-block;
-     margin: 0 20px;*!
-    margin-right: 2rem;
 
-}
-body>header>nav>ul>li>a{
-    font-size: 18px;
-    color: green;
-    text-decoration: none;
-    transition: 0.3s all;
-}
-body>header>nav>ul>li>dfn{
-    font-size: 18px;
-    color: green;
-    text-decoration: none;
-    transition: 0.3s all;
-}
-body>header>nav>ul>li>a:hover{
-    color: #3498db;
-}
-.hover-line::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #ff253a;
-    transition: width 2s;
-}
-.hover-line:hover::after{
-    width: 100%;
-    transition: width 5s;
-}*/
 
 /* mainBtn */
 .button-30 {
@@ -85,10 +39,7 @@ body>header>nav>ul>li>a:hover{
     color: #36395A;
     cursor: pointer;
     display: inline-flex;
-    /*font-family: 'Geologica', sans-serif;*/
     font-family: 'Open Sans', sans-serif;
-   /* font-family: 'Play', sans-serif;
-    font-family: 'Rokkitt', serif;*/
     height: 48px;
     justify-content: center;
     line-height: 1;
@@ -193,7 +144,7 @@ body>header{
     opacity: 0.5;
 }
 
-
+/*First profile photo*/
 main>section>div{
     /*border: 1px solid red;*/
     color: blue;
@@ -201,23 +152,24 @@ main>section>div{
     top: 140px;
     left: 450px;
 }
-main>section>div>h1:nth-child(1){
+/*Hello and name text*/
+#t_hello{
     font-size: 47px;
     color: crimson;
     transition: 2s;
 }
-main>section>div>h1:nth-child(2){
+#t_name{
     font-size: 31px;
     box-shadow: 1px 5px 5px 0;
     transition: 2s;
 }
-main>section>div>h1:nth-child(1):hover{
+#t_hello:hover{
     color: darkviolet;
     font-size: 55px;
     transition: 2s;
     box-shadow: 1px 2px 3px 2px darkorchid;
 }
-main>section>div>h1:nth-child(2):hover{
+#t_name:hover{
     color: indigo;
     font-size: 36px;
     transition: 2s;
@@ -292,9 +244,9 @@ main>section>div>h1:nth-child(2):hover{
     }
 }
 
-
-body>main>section>nav>ul{
-    /*  border: 2px solid red;*/
+/*Interduce text*/
+/*body>main>section>nav>ul{
+    !*  border: 2px solid red;*!
     width: 410px;
     height: 115px;
     padding-top: 31px;
@@ -303,7 +255,7 @@ body>main>section>nav>ul{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    /* display: flex;*/
+    !* display: flex;*!
     justify-content: center;
     align-items: center;
 }
@@ -338,7 +290,10 @@ body>main>section>nav>ul:after{
 }
 body>main>section>nav>ul:hover{
     border: 2px solid green;
-}
+}*/
+
+
+
 /*pic1*/
 main>section>img{
     margin-left: 50px;
@@ -355,7 +310,7 @@ body>main>section>section>h5{
     margin-left: 20px;
 }
 /*skil ul*/
-main>section>section>ul>li{
+/*main>section>section>ul>li{
     list-style: none;
     display: inline-block;
     margin: 0px 20px;
@@ -368,9 +323,9 @@ main>section>section>ul>li>a{
     transition: 0.3s all;
 }
 
-/*main>section>section>ul{
+!*main>section>section>ul{
     margin-left: 250px;
-}*/
+}*!
 main>section>section:nth-child(2)>ul{
     border: 2px solid red;
 }
@@ -443,7 +398,191 @@ main>section>section:nth-child(2)>ul{
             }
         }
     }
+}*/
+
+.skillDiv{
+    background-color: blueviolet;
+    position: relative;
+    left: 0;
+    top: 0;
 }
+
+
+.logo span img{
+    border-radius: 50%;
+    border: 10px solid purple;
+    padding: 10px;
+    width: 150px;
+}
+
+.logoTwo img{
+    border-radius: 50%;
+    border: 10px solid purple;
+    padding: 10px;
+}
+
+.skillDiv > h3{}
+
+/*start skill*/
+/*text skill*/
+.txt_skill{
+    position:relative;
+    top: 20px;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Rokkitt', serif;
+    background: linear-gradient(to right,#ff0303,#ffeb07,lime,#ff00eb);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+/*skill bar*/
+::selection{
+    color: #fff;
+    background: #6665ee;
+}
+.skill-bars{
+    position: relative;
+    top: 20px;
+    left: 300px;
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.skill-bars .bar-01{
+    margin: 20px 0;
+}
+.skill-bars .bar-01:first-child{
+    margin-top: 0px;
+}
+.skill-bars .bar-01 .s_info{
+    margin-bottom: 5px;
+}
+.skill-bars .bar-01 .s_info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.skill-bars .bar-01 .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+    0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.bar-01 .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar-01 .progress-line.html span{
+    width: 90%;
+}
+.bar-01 .progress-line.css span{
+    width: 70%;
+}
+.bar-01 .progress-line.jquery span{
+    width: 65%;
+}
+.bar-01 .progress-line.python span{
+    width: 60%;
+}
+.bar-01 .progress-line.mysql span{
+    width: 85%;
+}
+.bar-01 .progress-line.java span{
+    width: 80%;
+}
+.bar-01 .progress-line.hibernate span{
+    width: 65%;
+}
+.bar-01 .progress-line.react span{
+    width: 75%;
+}
+.progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "70%";
+}
+.progress-line.jquery span::after{
+    content: "65%";
+}
+.progress-line.python span::after{
+    content: "60%";
+}
+.progress-line.mysql span::after{
+    content: "85%";
+}
+.progress-line.java span::after{
+    content: "80%";
+}
+.progress-line.hibernate span::after{
+    content: "65%";
+}
+.progress-line.react span::after{
+    content: "75%";
+}
+
+
 /*social media*/
 #social{
     width: 300px;
@@ -527,10 +666,10 @@ a svg rect{
     stroke-width: 5;
     stroke: blue;
     stroke-dasharray:200 ;
-    animation: animate 2s linear infinite;
+    animation: animates 2s linear infinite;
 
 }
-@keyframes animate {
+@keyframes animates {
     0% {
         stroke-dashoffset: 400;
     }
