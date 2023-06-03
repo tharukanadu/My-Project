@@ -460,7 +460,7 @@
 current Time <span id="time"></span>
     Date <span id="date"></span>
 
-    <nav>
+   <!-- <nav>
       <ul>
 
       <li><a href="#sa"class="hover-line">Skill</a></li>
@@ -471,18 +471,52 @@ current Time <span id="time"></span>
       </ul>
 
 
-  </nav>
+  </nav>-->
+    <nav id="mainBtn">
+
+        <button class="button-30" role="button">Skill</button>
+        <button class="button-30" role="button">Education</button>
+        <button class="button-30" role="button">Project</button>
+        <button class="button-30" role="button">About</button>
+        <button class="button-30" role="button">Contact</button>
+
+
+    </nav>
 
 </header>
 <main>
   <section>
-      <img src="assests/MyWorkImages/new1.jpeg" alt="There was an error loading this image"width="300">
+    <!-- Add profile photo-->
+      <div class="pf_main">
+          <div class="pf_box">
+              <div class="pf_content">
+                  <img src="assests/MyWorkImages/new1.jpeg" alt="">
+              </div>
+          </div>
+      </div>
+
       <div>
           <h1>HELLO WELCOME</h1>
           <h1 id="name">I'M THARUAK NADUNN</h1>
 
       </div>
+
+      <!--text Animation-->
+<div class="developer_skill">
+      <div class="word_wrapper">
+          <div class="interaction_word">I'm a</div>
+          <ul class="developer_text">
+              <li><span>Frontend Developer</span></li>
+              <li><span>Backend Developer</span></li>
+              <li><span>Web Developer</span></li>
+              <li><span>Web Designer</span></li>
+              <li><span>Graphic Designer</span></li>
+          </ul>
+      </div>
+</div>
+
 <nav>
+
 <ul>
     <li>Name - Tharuka Nadun Sandeepa</li>
     <li>age - 21</li>
@@ -646,6 +680,8 @@ current Time <span id="time"></span>
 </main>
 
 <script src="assests/jQuery/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+<!--
 <script>
     $("#name").css("position","relative");
     let text=$("#name").text();
@@ -704,6 +740,7 @@ current Time <span id="time"></span>
     }
 
 </script>
+-->
 
 </body>
 </html>
