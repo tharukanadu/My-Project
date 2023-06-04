@@ -641,6 +641,43 @@ main>section>section:nth-child(2)>ul{
     margin-top: 10px;
     margin-bottom:25px;
 }
+
+/*Education*/
+#ijse{
+    text-align: center;
+    text-decoration: underline overline;
+}
+.education{
+    position: relative;
+    top: 20px;
+    left: 0;
+    background-color: bisque;
+}
+.education img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.education .scl,.gav{
+    border-radius: 30px;
+}
+.txt_education{
+    position:relative;
+    top: 20px;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Rokkitt', serif;
+    background: linear-gradient(to right,#ff0303,#ffeb07,lime,#ff00eb);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-bottom:25px;
+}
+
 /*social media*/
 #social{
     width: 300px;
