@@ -678,69 +678,10 @@ main>section>section:nth-child(2)>ul{
     margin-bottom:25px;
 }
 
-/*social media*/
-#social{
-    width: 300px;
-    height: 212px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    right: 243px;
-    bottom: 6px;
-}
-#social>div{
-    height: 40px;
-    border: 1px solid gold;
-    position: relative;
-    background: #05dde7;
-    box-shadow: 2px 3px 4px 2px;
-    left: 0;
-    transition: 2s;
-}
-#social>div>h3{
-    margin: 10px;
-    display: inline-block;
-}
-#social>div>i{
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    font-size: 30px;
-    color: darkblue;
-    transition: all 2s;
-}
-#social>div:hover{
-    background-color: gold;
-    left: 243px;
-    cursor: pointer;
-    transition: all 2s;
-}
-/* frame*/
-.box{
-    position: relative;
-    left: 90px;
-    width: 550px;
-    height: 300px;
-    border:4px solid transparent;
-    border-image: linear-gradient(-45deg,#ff0,#f0f,#f00,#00f,#0f0);
-    border-image-slice: 1;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
-}
-.me{
-    position: relative;
-    left: 200px;
-}
-main>section>section>div>h3 {
-    position: relative;
-    left: 180px;
-}
-main>section>section>div>h5{
-    position: relative;
-    left: 20px;
-}
+
+
 /* animation border*/
-a{
+/*a{
     position: relative;
     padding: 15px 30px;
     color:black;
@@ -771,8 +712,37 @@ a svg rect{
     100% {
         stroke-dashoffset: 0;
     }
-}
+}*/
 /*  about*/
+/*about text*/
+#About_txt{
+    position:relative;
+    top: 20px;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Rokkitt', serif;
+    background: linear-gradient(to right,#ff0303,#ffeb07,lime,#ff00eb);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-bottom:25px;
+}
+/*sport text*/
+.sport_text{
+    position: relative;
+    top: 20px;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    padding: 0 20px;
+    font-size: 6mm;
+    color: white;
+    text-shadow: 0 0 20px #ff005b;
+    text-decoration: underline;
+}
 
 .about{
     width: 400%;
@@ -861,4 +831,93 @@ a svg rect{
         transform: translateX(-75%);
     }
 }
+/*contact*/
+#contact_txt{
+    position:relative;
+    top: 20px;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Rokkitt', serif;
+    background: linear-gradient(to right,#ff0303,#ffeb07,lime,#ff00eb);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-bottom:25px;
+}
+/* frame*/
+#con_t{
+    background: url("assests/photo/child.gif");
+    background-size: cover;
+}
+.box{
+    position: relative;
+    top: 150px;
+    left: 600px;
+    width: 550px;
+    height: 360px;
+    border:4px solid transparent;
+    border-image: linear-gradient(-45deg,#ff0,#f0f,#f00,#00f,#0f0);
+    border-image-slice: 1;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    background: gold;
+}
+.box img{
+    position: absolute;
+    left: 200px;
+    padding: 15px;
+}
+.box h3{
+    position: absolute;
+    top: 120px;
+    left: 190px;
 
+}
+.box h5{
+    position: absolute;
+    top: 160px;
+    left: 210px;
+}
+
+
+/*social media*/
+#social{
+    width: 300px;
+    height: 212px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    right: 243px;
+    bottom: 100px;
+}
+#social>div{
+    height: 40px;
+    border: 1px solid gold;
+    position: relative;
+    background: #05dde7;
+    box-shadow: 2px 3px 4px 2px;
+    left: 0;
+    transition: 2s;
+}
+#social>div>h3{
+    margin: 10px;
+    display: inline-block;
+}
+#social>div>i{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 30px;
+    color: darkblue;
+    transition: all 2s;
+}
+#social>div:hover{
+    background-color: gold;
+    left: 243px;
+    cursor: pointer;
+    transition: all 2s;
+}
